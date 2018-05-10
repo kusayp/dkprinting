@@ -1,0 +1,74 @@
+{% load staticfiles %}
+<!DOCTYPE html> 
+<html lang="en-US" class="no-js scheme_default">
+
+    {% include 'header.html' %}
+
+        
+
+               
+    
+
+    <body class="home page custom-background body_tag scheme_default body_style_boxed blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-custom-18 header_position_default menu_style_top desktop_layout">
+        <!-- Body wrap -->
+        <div class="body_wrap">
+            <!-- Page wrap -->
+            <div class="page_wrap">
+                {% include 'nav.html' %}
+                {% block breadcrumb %}{% endblock %}
+                </header>
+                 <!-- /Header -->
+                 {% include 'mobile-menu.html' %}   
+                <!-- Page content wrap -->
+                <div class="page_content_wrap scheme_default">
+                    <!-- Content -->
+                    <div class="content">
+                        <article class="post_item_single page">
+                            <div class="post_content">
+                              {% block content %}{% endblock %}
+                            </div>
+                        </article>
+                    </div>
+                    <!-- /Content -->
+                </div>
+                <!-- /Page content wrap -->
+                {% include 'footer.html' %}
+            </div>
+            <!-- /Page wrap -->
+        </div>
+        <!-- /Body wrap -->
+
+        <script type="text/javascript" src="{% static 'js/jquery/jquery.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery/jquery-migrate.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery/ui/core.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery/ui/widget.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery/ui/accordion.min.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'js/_main.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'js/vendor/essential-grid/js/lightbox.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/essential-grid/js/jquery.themepunch.tools.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/essential-grid/js/jquery.themepunch.essential.min.js' %}"></script>
+        <script type='text/javascript' src="{% static 'js/vendor/revslider/jquery.themepunch.revolution.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/eg-projects.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'js/vendor/revslider/revsliderextensions/revolution.extension.slideanims.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/revslider/revsliderextensions/revolution.extension.actions.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/revslider/revsliderextensions/revolution.extension.layeranimation.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/revslider/revsliderextensions/revolution.extension.navigation.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/revslider-homepage.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'js/vendor/swiper/swiper.jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vendor/magnific/jquery.magnific-popup.min.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'js/trx_addons.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/superfish.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
+
+        <script type='text/javascript' src='http://maps.googleapis.com/maps/api/js'></script>
+        <a href="homepage-boxed.html#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
+
+    </body>
+
+</html>
